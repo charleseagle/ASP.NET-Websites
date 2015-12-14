@@ -1,0 +1,47 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+
+<head runat="server">
+    <title>Acient History</title>
+    <link type="text/css" rel="stylesheet" href="stylesheet.css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div id="header">
+     <h3> AcientHistory.com </h3>
+</div>
+
+<div id="navbar">
+     <ul>
+        <li><a href="/Default.aspx"> Home </a></li>
+        <li><a href="/Webpages/Acient Greece/greece.aspx"> Acient Greece </a></li>
+        <li><a href="/Webpages/Rome/rome.aspx"> Acient Rome </a></li>
+        <li><a href="/Webpages/World War2/war2.aspx"> World War II </a></li>
+     </ul>	
+
+</div>
+
+
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+
+<div id="footer">
+     <ul>
+        <li><a href="/Webpages/Misc/about.aspx"> About AcientHistory </a></li>
+        <li><a href="/Webpages/Misc/careers.aspx"> Careers </a></li>
+        <li><a href="/Webpages/Misc/help.aspx"> Help </a></li>
+        <li><a href="/Webpages/Misc/contact.aspx"> Contact </a></li>
+     </ul>	
+&copy; 2015 Historyden.com. All Rights Reserved.
+</div>
+</body>
+</html>
